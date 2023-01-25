@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #111;
+  background-image:  radial-gradient(rgb(137, 137, 233) 1px, transparent 1px), radial-gradient(rgb(210, 167, 167) 1px, #111 1px);
+  background-size: 80px 80px;
+  background-position: 0 0,40px 40px;
+  font-family: 'barlow' , sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  width: 100%;
+  // width: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  gap: 15px;
+  justify-content: center;
+  max-width: 1125px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  gap: 25px;
+  padding-bottom: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  h1 {
+    font-weight: 500;
+    font-size: 26px;
+  }
+
+  p {
+    font-weight: 500;
+  }
+
+  img {
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+.card :not(img){
+  padding: 0 25px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+
+  li {
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: left;
+    padding: 0 !important;
+  }
+}
+
+.API {
+  color: #aad742;
+}
+
+.JS {
+  color: #cf6390;
+}
+
+.CSS {
+  color: #3e54a3;
+}
+
+.HTML {
+  color: #6abecd;
+}
+
+
+a:active , a:visited , a:link{
+  color: black;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,16 @@
+{{#with project}} {{evaluateLink folder projectLink}}
+
+<div class="card">
+  <a href="{{ projectLink }}">
+    <img src="{{folder}}design/desktop-preview.jpg" alt="Project Preview">
+  </a>
+  <ul>
+    {{#each tags}}
+    <li class="{{this}}">{{this}}</li>
+    {{/each}}
+  </ul>
+    <h1>{{title}}</h1>
+  <p>{{description}}</p>
+  </div>  
+
+{{/with}}
