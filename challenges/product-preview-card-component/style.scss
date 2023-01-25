@@ -135,7 +135,7 @@ body {
 
 /* ---------------------------------- media --------------------------------- */
 
-@media only screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
   #img-1 {
     display: block;
   }
@@ -146,10 +146,10 @@ body {
 
   .main {
     flex-direction: column;
-  }
+  } 
 }
 
-@media only screen and (min-width: 751px) {
+@media screen and (min-width: 751px) {
   .main {
     width: 500px;
     gap : 0
