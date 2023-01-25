@@ -45,6 +45,7 @@ body {
 }
 .card p {
   font-weight: 500;
+  color: #777;
 }
 .card img {
   width: 100%;
