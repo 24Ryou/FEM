@@ -1,0 +1,147 @@
+// fnt : Outfit - 18px
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+$Soft-blue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+$Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+$Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+$Very-dark-blue-line: hsl(215, 32%, 27%);
+$White: hsl(0, 0%, 100%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $Very-dark-blue-main-BG;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+}
+
+.main {
+  background-color: $Very-dark-blue-card-BG;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 25px;
+  border-radius: 12px;
+  font-family: 'Outfit';
+  font-size: 18px;
+  gap: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-eth {
+  border-radius: 10px;
+}
+
+.img-avatar {
+  width: 50px;
+  border: 1px solid $White;
+  border-radius: 100%;
+}
+
+.icon-clock {
+  width: 20px;
+  margin-left: auto;
+}
+
+.icon-eth {
+  width: 15px;
+}
+
+.price-box {
+  border-bottom: 1px solid $Very-dark-blue-line;
+  padding-bottom: 15px;
+  // width: 90%;
+  // margin: 0 auto;
+}
+
+.clr-white {
+  color: $White;
+}
+
+.clr-softBlue {
+  color: $Soft-blue;
+}
+
+.clr-cyan {
+  color: $Cyan;
+}
+
+h3{
+  font-weight: 400;
+  // font-size: 16px;
+}
+
+.price-box {
+  gap: 8px
+}
+
+.avatar-box {
+  gap: 25px;
+}
+
+.image-box {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  cursor: pointer;
+
+  &:hover {
+    .img-shadow {
+      display: block;
+    }
+  }
+}
+
+.img-eth {
+  position: absolute;
+}
+
+.img-shadow {
+  display: none;
+  background: hsla(178, 100%, 50%, 0.35);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .icon-view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+  }
+}
+
+h1 , span , .eth {
+  transition: color ease 300ms;
+}
+
+h1:hover , span:hover ,.eth:hover{
+  color: $Cyan;
+  cursor: pointer;
+}
