@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Red Hat Display";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(225deg, 100%, 94%);
+  background-position: center;
+}
+
+.main {
+  font-size: 16px;
+  text-align: center;
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 25px;
+}
+
+.link {
+  margin-left: auto;
+  font-weight: 700;
+}
+
+.title, .payment-title {
+  font-weight: 900;
+  color: hsl(223deg, 47%, 23%);
+}
+
+.text, .payment-period {
+  color: hsl(224deg, 23%, 55%);
+  line-height: 1.6;
+}
+
+.payment-period {
+  font-weight: 500;
+}
+
+.price-box {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: hsl(225deg, 100%, 98%);
+}
+
+.btn {
+  margin: 0 25px;
+  padding: 20px;
+  border-radius: 12px;
+  border: none;
+  width: auto;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background-color: hsl(245deg, 75%, 52%);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0px 15px 10px hsl(225deg, 100%, 94%);
+}
+
+.btn-cancel {
+  background: none;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: hsl(224deg, 23%, 55%);
+}
+
+a, button {
+  transition: all ease 300ms;
+}
+a:hover, button:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+/* ---------------------------------- MEDIA --------------------------------- */
+@media only screen and (min-width: 750px) {
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+  }
+}
