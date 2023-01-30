@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+
+$fnt-Lexend-Deca : "Lexend Deca";
+$fnt-Big-Shoulders-Display: "Big Shoulders Display";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+html , body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  min-height: -moz-min-content; // not implemented
+  min-height: -webkit-min-content; // works for opera and safari
+  min-height: min-content; // works for chrome
+}
+
+body {
+  margin: auto;
+  display: flex;
+  justify-content: safe center;
+  align-items: safe center;
+}
+
+.main {
+  margin: auto;
+}
+
+img {
+  width: 50px;
+}
+
+.sedans {
+  border-radius: 5px 5px 0 0;
+  background-color: $Bright-orange;
+  button {
+    color: $Bright-orange;
+  }
+}
+
+.suvs {
+  background-color: $Dark-cyan;
+  button {
+    color: $Dark-cyan;
+  }
+}
+
+.luxury {
+  background-color: $Very-dark-cyan;
+  button {
+    color: $Very-dark-cyan;
+  }
+  border-radius: 0 0 5px 5px;
+}
+
+.col {
+  font-family: $fnt-Lexend-Deca;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 40px;
+  color: white;
+  gap: 30px;
+}
+
+h1 {
+  font-family: $fnt-Big-Shoulders-Display;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.7;
+}
+
+button {
+  font-family: $fnt-Lexend-Deca;
+  border: none;
+  padding: 15px;
+  width: 50%;
+  border-radius: 50px;
+}
+
+/* ---------------------------------- MEDIA --------------------------------- */
+
+@media screen and (min-width : '1080px'){
+  .main {
+    display: flex;
+  }
+
+  .sedans {
+    border-radius: 5px 0 0 5px;
+  }
+
+  .luxury {
+    border-radius: 0 5px 5px 0;
+  }
+}
