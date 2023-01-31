@@ -4,6 +4,16 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
 button {
   border: none;
   cursor: pointer;
@@ -11,16 +21,4 @@ button {
 
 a {
   cursor: pointer;
-}
-
-.main {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  margin-left: -10px;
-  /* -1/2 width */
-  margin-top: -10px;
-  /* -1/2 height */
 }
