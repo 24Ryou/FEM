@@ -11,6 +11,17 @@ const projects =
     ]
   },
   {
+    "folder": "challenges/faq-accordion-card/",
+    "title": "FAQ accordion card",
+    "orginalLink": "https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam",
+    "description": "In this challenge, you'll be building out an FAQ accordion. This is an extremely common front-end pattern, so it's a great opportunity to get some practice in!",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JS"
+    ]
+  },
+  {
     "folder": "challenges/interactive-rating-component/",
     "title": "Interactive rating component",
     "orginalLink": "https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI",
