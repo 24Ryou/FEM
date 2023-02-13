@@ -83,6 +83,16 @@ const projects =
     ]
   },
   {
+    "folder": "challenges/social-proof-section/",
+    "title": "Social proof section",
+    "orginalLink": "https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA",
+    "description": "This project will test your layout skills. If you're starting to get confident with Flexbox or Grid, this will provide a nice challenge!",
+    "tags": [
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
     "folder": "challenges/stats-preview-card-component/",
     "title": "Stats preview card component",
     "orginalLink": "https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62",
