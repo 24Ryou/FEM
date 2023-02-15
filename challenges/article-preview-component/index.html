@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <title>Frontend Mentor | Article preview component</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="flex justify-center items-center h-screen font-main bg-Grayish_Blue-100">
+
+  <main class="container flex flex-col md:flex-row justify-center items-center md:w-8/12 w-9/12 rounded-xl overflow-hidden md:overflow-visible bg-white">
+    <div class="mb-4 md:mb-0 h-3/5 md:h-full image-fix">
+      <img src="images/drawers.jpg" alt="drawers" class="rounded-l-xl">
+    </div>
+    <div class="flex flex-col pt-8 md:pt-4 px-9 md:pr-16 space-y-4 md:w-11/12">
+      <h1 class="text-xl font-bold text-Grayish_Blue-600">
+        Shift the overall look and feel by adding these wonderful touches to furniture in your home
+      </h1>
+      <p class="text-Grayish_Blue-500 font-medium">
+        Ever been in a room and felt like something was missing? Perhaps 
+      it felt slightly bare and uninviting. I’ve got some simple tips 
+      to help you make any room feel complete.
+      </p>
+  
+      
+      <div id="avatar-box" class="flex items-center py-4 mt-3 w-full">
+        <img src="images/avatar-michelle.jpg" alt="avatar-michelle" class="rounded-full w-12">
+        <div class="flex ml-4 flex-col">
+          <h1 class="text-base font-bold text-Grayish_Blue-600">Michelle Appleton</h1>
+          <h1 class="text-base font-medium text-Grayish_Blue-400">28 Jun 2020</h1>
+        </div>
+        <div id="share-box-2" class="flex items-center py-4 mt-4 px-12 bg-Grayish_Blue-600 w-fit rounded-xl hidden">
+          <h1 class="text-sm uppercase tracking-widest text-Grayish_Blue-400">share</h1>
+          <div class="ml-4 flex space-x-4">
+            <img src="images/icon-facebook.svg" alt="icon-facebook" class="w-4">
+            <img src="images/icon-twitter.svg" alt="icon-twitter.svg" class="w-4">
+            <img src="images/icon-pinterest.svg" alt="icon-pinterest.svg" class="w-4">
+          </div>
+        </div>
+        <div class="arrow-down hidden"></div>
+        <span id="btn-share-1" class="material-icons text-Grayish_Blue-600 flip-image ml-auto bg-Grayish_Blue-100 p-2 rounded-full cursor-pointer sm:hidden">
+          reply
+        </span>
+        <span id="btn-share-3" class="material-icons text-Grayish_Blue-600 flip-image ml-auto bg-Grayish_Blue-100 p-2 rounded-full cursor-pointer hidden sm:block">
+          reply
+        </span>
+      </div>
+    </div>
+    <div id="share-box" class="flex items-center py-5 mt-4 px-9 bg-Grayish_Blue-600 w-full sm:hidden hidden">
+      <h1 class="text-base uppercase tracking-widest text-Grayish_Blue-400">share</h1>
+      <div class="ml-4 flex space-x-4">
+        <img src="images/icon-facebook.svg" alt="icon-facebook" class="w-7">
+        <img src="images/icon-twitter.svg" alt="icon-twitter.svg" class="w-7">
+        <img src="images/icon-pinterest.svg" alt="icon-pinterest.svg" class="w-7">
+      </div>
+      <span id="btn-share-2" class="material-icons text-Grayish_Blue-100 flip-image ml-auto bg-Grayish_Blue-500 p-2 rounded-full cursor-pointer">
+        reply
+      </span>
+    </div>
+    
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
