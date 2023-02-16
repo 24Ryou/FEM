@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+  height: 450px;
+}
+
+main {
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.input_box {
+  @apply flex;
+  @apply items-center;
+  position: relative;
+}
+
+input {
+  @apply outline-none;
+  @apply w-full;
+  @apply p-3;
+  @apply pl-8;
+  @apply bg-transparent;
+  @apply border;
+  @apply rounded-full;
+  @apply border-primary-red-Desaturated;
+  @apply border-opacity-50;
+  @apply text-primary-red-Grayish;
+}
+
+.input-active {
+  @apply border-primary-red-soft;
+}
+
+.btn {
+  @apply p-4;
+  @apply rounded-full;
+  @apply px-10;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  position: absolute;
+  right: 0;
+}
+
+
+.btn-active{
+  @apply bg-primary-gradient-300;
+  @apply shadow-xl;
+  @apply shadow-primary-red-Desaturated;
+}
+
+.btn-error{
+  z-index: 1;
+  position: absolute;
+  right: 25%;
+}
+
+.error-msg{
+  position: absolute;
+  bottom: -50%;
+  left: 5%;
+  @apply text-sm;
+  @apply text-primary-red-soft;
+}
+
+@media (min-width: 600px) {
+  .hero {
+    height: auto;
+  }
+  .info {
+    width: 400px;
+    /* padding: 16px; */
+  }
+  
+  main {
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: repeat-x;
+    background-size: auto;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
