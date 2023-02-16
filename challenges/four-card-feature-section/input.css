@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.box {
+  @apply bg-white;
+  @apply border-t-4;
+  @apply p-8;
+  @apply flex;
+  @apply flex-col;
+  @apply justify-start;
+  @apply m-8;
+  @apply shadow-md;
+  @apply rounded-lg;
+  @apply mx-auto;
+  @apply md:m-4;
+  @apply md:max-w-sm;
+  height: 250px;
+}
+.box h1 {
+  @apply font-bold;
+  @apply text-xl;
+  @apply mb-2;
+}
+.box p {
+  @apply text-sm;
+  @apply text-neutral-300;
+}
+.box img {
+  @apply mt-auto;
+  @apply self-end;
+  @apply w-16;
+}

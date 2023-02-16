@@ -33,6 +33,16 @@ const projects =
     ]
   },
   {
+    "folder": "challenges/four-card-feature-section/",
+    "title": "Four card feature section",
+    "orginalLink": "https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK",
+    "description": "A nice layout-based challenge for beginners. This will test anyone who is new to multi-column and responsive layouts.",
+    "tags": [
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
     "folder": "challenges/interactive-rating-component/",
     "title": "Interactive rating component",
     "orginalLink": "https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI",
