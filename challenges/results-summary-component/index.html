@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="h-screen flex items-center justify-center">
+
+  <main class="container md:grid md:grid-cols-2 font-hanken w-fit bg-white rounded-3xl shadow-lg mx-auto shadow-lightlavender">
+    <div class="mx-auto text-center p-8 text-neutral-300 rounded-3xl bg-gradient-to-t from-lightroyal to-lightslate space-y-4 md:m-0 w-80 flex flex-col">
+      <h1 class="text-lg items-start">
+        Your Result
+      </h1>
+      <div class="bg-gradient-to-b from-violetblue to-persianblue w-40 mx-auto rounded-full p-10">
+        <h1 class="text-white text-6xl">
+          76
+        </h1>
+        <p>
+          of 100
+        </p>
+      </div>
+      <div class="space-y-4 pt-4">
+        <h1 class="text-white text-xl">
+          Great
+        </h1>
+        <p>
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col p-8 space-y-4 mx-auto md:m-0 w-full">
+      <h1 class="text-lg text-darkgrayblue font-extrabold">
+        Summary
+      </h1>
+      <div class="box bg-lightred bg-opacity-5">
+        <img src="assets/images/icon-reaction.svg" alt="icon-reaction">
+        <h1 class="text-lightred">
+          Reaction
+        </h1>
+        <p class="text-neutral-400 font-bold">
+          <span class="text-darkgrayblue font-bold">80 /</span> 100
+        </p>
+      </div>
+      <div class="box bg-orangyyellow bg-opacity-5">
+        <img src="assets/images/icon-memory.svg" alt="icon-memroy">
+        <h1 class="text-orangyyellow">
+          Memory
+        </h1>
+        <p class="text-neutral-400 font-bold">
+          <span class="text-darkgrayblue font-bold">92 /</span> 100
+        </p>
+      </div>
+      <div class="box bg-greenteal bg-opacity-5">
+        <img src="assets/images/icon-verbal.svg" alt="icon-verbal">
+        <h1 class="text-greenteal">
+          Verbal
+        </h1>
+        <p class="text-neutral-400 font-bold">
+          <span class="text-darkgrayblue font-bold">61 /</span> 100
+        </p>
+      </div>
+      <div class="box bg-cobaltblue bg-opacity-5">
+        <img src="assets/images/icon-visual.svg" alt="icon-visual">
+        <h1 class="text-cobaltblue">
+          Visual
+        </h1>
+        <p class="text-neutral-400 font-bold">
+          <span class="text-darkgrayblue font-bold">72 /</span> 100
+        </p>
+      </div>
+      <button class="mx-auto p-4 border w-full rounded-full bg-darkgrayblue text-white hover:bg-gradient-to-t hover:from-lightroyal hover:to-lightslate">
+        Continue
+      </button>
+    </div>
+  </main>
+
+</body>
+</html>

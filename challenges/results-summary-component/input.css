@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.box {
+  @apply flex;
+  @apply items-center;
+  @apply p-4;
+  /* @apply mx-auto; */
+  /* @apply md:m-0 */
+  @apply gap-2;
+  @apply rounded-lg;
+  @apply w-full;
+  /* @apply md:w-80; */
+}
+
+.box p {
+  @apply ml-auto;
+}
