@@ -25,13 +25,15 @@ function myfunction() {
     if (inp.value === "") {
       p.innerHTML = '';
       span.classList.remove("hidden")
+      inp.classList.add("validation-error")
       node = erroMessages[key]
       p.appendChild(node)
     }
-
+    
     if (key === "email" && inp.value !== "") {
       if (!regex.test(inp.value)) {
         p.innerHTML = '';
+        inp.classList.add("validation-error")
         span.classList.remove("hidden")
         node =  document.createTextNode("Looks like this is not an email")
         p.appendChild(node)
