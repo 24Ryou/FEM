@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  background-image: url(images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.custom-shadow {
+  box-shadow: 0 7px 0 0px hsla(0, 0%, 0% , 0.1);
+}
+
+.custom-shadow2 {
+  box-shadow: 0 3px 0 0 hsla(154, 64%, 36%, 0.699);
+}
+
+
+.validation-error {
+  @apply border-red;
+  @apply placeholder:text-transparent
+}
+
+@media only screen and (min-width : 650px) {
+  main {
+    background-image: url(images/bg-intro-desktop.png);
+  }
+}

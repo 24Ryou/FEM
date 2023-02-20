@@ -1,0 +1,11 @@
+{
+  "folder": "challenges/intro-component-with-sign-up-form/",
+  "title": "Intro component with sign-up form",
+  "orginalLink": "https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1",
+  "description": "Practice building out a sign-up form complete with client-side validation using JavaScript.",
+  "tags": [
+    "HTML",
+    "CSS",
+    "JS"
+  ]
+}

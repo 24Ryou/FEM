@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="output.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+  <main class="bg-red min-h-screen min-w-screen text-white font-Poppins container p-4 flex flex-col items-center justify-center gap-4 md:flex-row">
+
+    <div class="text-center space-y-4 md:text-left md:w-96">
+      <h1 class="font-bold text-4xl">
+        Learn to code by watching others
+      </h1>
+
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p> 
+    </div>
+
+    <div class="w-fit">
+      <div class="rounded-lg bg-blue p-8 text-center mb-8 custom-shadow cursor-pointer">
+        <strong>Try it free 7 days</strong> then $20/mo. thereafter
+      </div>
+      <div class="bg-white text-darkblue p-8 rounded-lg custom-shadow">
+        <ul class="flex flex-col gap-4">
+          <div class="w-full relative" id="firstname_input">
+            <span class="material-icons text-red absolute right-0 p-4 hidden">
+              info
+            </span>
+            <input type="text" name="firtsname" class=" w-full font-bold border-2 rounded-md p-4 px-8" placeholder="First Name">
+            <p class="text-xs text-right text-red italic"></p>
+          </div>
+          <div class="w-full relative" id="lastname_input">
+            <span class="material-icons text-red absolute right-0 p-4 hidden">
+              info
+            </span>
+            <input type="text" name="lastname" class=" w-full font-bold border-2 rounded-md p-4 px-8" placeholder="Last Name">
+            <p class="text-xs text-right text-red italic"></p>
+          </div>
+          <div class="w-full relative" id="email_input">
+            <span class="material-icons text-red absolute right-0 p-4 hidden">
+              info
+            </span>
+            <input type="email" name="email" class=" w-full font-bold border-2 rounded-md p-4 px-8" placeholder="Email Address">
+            <p class="text-xs text-right text-red italic"></p>
+          </div>
+          <div class="w-full relative" id="password_input">
+            <span class="material-icons text-red absolute right-0 p-4 hidden">
+              info
+            </span>
+            <input type="password" name="password" class=" w-full font-bold border-2 rounded-md p-4 px-8" placeholder="Password">
+            <p class="text-xs text-right text-red italic"></p>
+          </div>
+          <button onclick="myfunction()" class="w-full bg-green p-4 rounded-md custom-shadow2 text-white uppercase hover:bg-opacity-50 transition-colors delay-100">
+            Claim your free trial  
+          </button>
+        </ul>
+        <p class="font-medium text-xs text-grayishblue text-center p-4">
+          By clicking the button, you are agreeing to our <span class="text-red">Terms and Services</span>
+        </p>
+      </div>
+    </div>
+    
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
