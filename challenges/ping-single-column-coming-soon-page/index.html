@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="output.css">
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+</head>
+<body>
+
+  <main class="min-h-screen grid grid-cols-1 w-full">
+    <div class="container m-auto flex flex-col items-center h-full justify-between py-4 font-Franklin w-96">
+      <header class="">
+        <img src="images/logo.svg" alt="logo" class="mx-auto">
+      </header>
+
+      <div class="space-y-4 text-center">
+        <h1 class="text-3xl text-my-gray">
+          We are launching 
+          <span class="font-bold text-my-darkblue">soon!</span>
+        </h1>
+      
+        <p class="text-lg text-my-darkblue">
+          Subscribe and get notified
+        </p>
+      </div>
+      
+      <div class="flex flex-col w-full sm:flex-row gap-4 items-center justify-center">
+        <div id="inpbox" class= "relative w-full sm:mb-0">
+          <input id="input" type="email" class="border-2 rounded-full p-2 pl-8 border-my-paleblue placeholder:text-my-gray placeholder:ml-4 w-full sm:text-sm" placeholder="Your email address...">
+          <p id="inputMsg" class="absolute text-xs -bottom-5 sm:left-5 sm:right-auto italic text-my-lightred left-0 right-0 font-semibold">
+          </p>
+        </div>
+        <button id="btnSubmit" type="submit" class="bg-my-blue p-2 rounded-full text-white font-semibold drop-shadow-my sm:w-5/12 w-full sm:text-sm sm:font-medium hover:bg-opacity-50 transition-colors delay-100">
+          Notify Me
+        </button>
+      </div>
+      
+      <img src="images/illustration-dashboard.png" alt="illustration-dashboard" class="my-4">
+    
+      <footer class="text-center space-y-6">
+        <div class="space-x-4">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+  
+        <p class="text-xs text-my-gray">
+          &copy; Copyright Ping. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fa-brands {
+  @apply border;
+  @apply p-2;
+  @apply rounded-full;
+  @apply w-9;
+  @apply text-my-blue;
+  @apply border-my-paleblue;
+}

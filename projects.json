@@ -96,6 +96,17 @@ const projects =
     ]
   },
   {
+    "folder": "challenges/ping-single-column-coming-soon-page/",
+    "title": "Ping single column coming soon page",
+    "orginalLink": "https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da",
+    "description": "This challenge is great for beginners and offers a chance to practice basic client-side form validation.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JS"
+    ]
+  },
+  {
     "folder": "challenges/product-preview-card-component/",
     "title": "Product preview card component",
     "orginalLink": "https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa",
