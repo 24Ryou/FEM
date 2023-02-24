@@ -8,7 +8,9 @@ const projects =
     "tags": [
       "HTML",
       "CSS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/002_interactive-rating-component/",
@@ -19,7 +21,9 @@ const projects =
       "HTML",
       "CSS",
       "JS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/003_qr-code-component/",
@@ -29,7 +33,9 @@ const projects =
     "tags": [
       "HTML",
       "CSS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/004_nft-preview-card-component/",
@@ -39,7 +45,9 @@ const projects =
     "tags": [
       "HTML",
       "CSS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/005_order-summary-component/",
@@ -49,7 +57,9 @@ const projects =
     "tags": [
       "HTML",
       "CSS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/006_stats-preview-card-component/",
@@ -59,7 +69,9 @@ const projects =
     "tags": [
       "HTML",
       "CSS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/007_3-column-preview-card-component/",
@@ -69,7 +81,9 @@ const projects =
     "tags": [
       "HTML",
       "CSS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/008_profile-card-component/",
@@ -79,7 +93,9 @@ const projects =
     "tags": [
       "HTML",
       "CSS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/009_faq-accordion-card/",
@@ -90,7 +106,9 @@ const projects =
       "HTML",
       "CSS",
       "JS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/010_social-proof-section/",
@@ -100,7 +118,9 @@ const projects =
     "tags": [
       "HTML",
       "CSS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/011_results-summary-component/",
@@ -110,7 +130,9 @@ const projects =
     "tags": [
       "HTML",
       "CSS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/012_article-preview-component/",
@@ -121,7 +143,9 @@ const projects =
       "HTML",
       "CSS",
       "JS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/013_four-card-feature-section/",
@@ -131,7 +155,9 @@ const projects =
     "tags": [
       "HTML",
       "CSS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/014_base-apparel-coming-soon-page/",
@@ -142,7 +168,9 @@ const projects =
       "HTML",
       "CSS",
       "JS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/015_intro-component-with-sign-up-form/",
@@ -153,7 +181,9 @@ const projects =
       "HTML",
       "CSS",
       "JS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/016_single-price-grid-component/",
@@ -163,7 +193,9 @@ const projects =
     "tags": [
       "HTML",
       "CSS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/017_ping-single-column-coming-soon-page/",
@@ -174,7 +206,9 @@ const projects =
       "HTML",
       "CSS",
       "JS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   },
   {
     "folder": "challenges/018_huddle-landing-page-with-a-single-introductory-section/",
@@ -184,6 +218,8 @@ const projects =
     "tags": [
       "HTML",
       "CSS"
-    ]
+    ],
+    "number": "1",
+    "level": "newbie"
   }
 ]
