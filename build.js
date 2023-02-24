@@ -6,6 +6,7 @@ const fs = require('fs')
 const tagSelector = '#content ul:first li'
 const hedlineSelector = '#content h1'
 const textSelector = "#content p"
+const spanSelector = "#content section span span"
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms))
 
@@ -64,13 +65,17 @@ const prepare = async () => {
       })
       title = $(hedlineSelector).first().text()
       description = $(textSelector).first().text()
+      levelNum = $(spanSelector).first().text()
+      level =  $(spanSelector).last().text()
       // folder = `challenges/${title.toLowerCase().replace(/\s/g, "-")}/`
       arr = {
         "folder": `challenges/${dirs[ndx]}/`,
         "title": title,
         "orginalLink": url,
         "description": description,
-        "tags":tags
+        "tags": tags,
+        "number": levelNum,
+        "level": level
       }
       jsonArr.push(arr)
     }))
