@@ -1,70 +1,17 @@
 const projects = 
 [
   {
-    "folder": "challenges/3-column-preview-card-component/",
-    "title": "3-column preview card component",
-    "orginalLink": "https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-",
-    "description": "This challenge is perfect if you're just getting started. The shift between the layouts will be a nice test if you're new to building responsive projects.",
+    "folder": "001_product-preview-card-component",
+    "title": "Product preview card component",
+    "orginalLink": "https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa",
+    "description": "This HTML & CSS-only challenge will be perfect for anyone starting to build responsive projects.",
     "tags": [
       "HTML",
       "CSS"
     ]
   },
   {
-    "folder": "challenges/article-preview-component/",
-    "title": "Article preview component",
-    "orginalLink": "https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT",
-    "description": "Practice your layout skills with this article preview component. There's lots of fun to be had playing around with animations for the sharing icons as well.",
-    "tags": [
-      "HTML",
-      "CSS",
-      "JS"
-    ]
-  },
-  {
-    "folder": "challenges/base-apparel-coming-soon-page/",
-    "title": "Base Apparel coming soon page",
-    "orginalLink": "https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0",
-    "description": "This layout looks simple enough, but there are some interesting details to it that will test your CSS skills. You'll also get to practice basic form validation.",
-    "tags": [
-      "HTML",
-      "CSS",
-      "JS"
-    ]
-  },
-  {
-    "folder": "challenges/faq-accordion-card/",
-    "title": "FAQ accordion card",
-    "orginalLink": "https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam",
-    "description": "In this challenge, you'll be building out an FAQ accordion. This is an extremely common front-end pattern, so it's a great opportunity to get some practice in!",
-    "tags": [
-      "HTML",
-      "CSS",
-      "JS"
-    ]
-  },
-  {
-    "folder": "challenges/four-card-feature-section/",
-    "title": "Four card feature section",
-    "orginalLink": "https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK",
-    "description": "A nice layout-based challenge for beginners. This will test anyone who is new to multi-column and responsive layouts.",
-    "tags": [
-      "HTML",
-      "CSS"
-    ]
-  },
-  {
-    "folder": "challenges/huddle-landing-page-with-a-single-introductory-section/",
-    "title": "Huddle landing page with a single introductory section",
-    "orginalLink": "https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0",
-    "description": "A perfect challenge for beginners, this project will get you working with a two column layout.",
-    "tags": [
-      "HTML",
-      "CSS"
-    ]
-  },
-  {
-    "folder": "challenges/interactive-rating-component/",
+    "folder": "002_interactive-rating-component",
     "title": "Interactive rating component",
     "orginalLink": "https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI",
     "description": "This is a nice, small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!",
@@ -75,7 +22,130 @@ const projects =
     ]
   },
   {
-    "folder": "challenges/intro-component-with-sign-up-form/",
+    "folder": "003_qr-code-component",
+    "title": "QR code component",
+    "orginalLink": "https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H",
+    "description": "A perfect first challenge if you're new to HTML and CSS. The card layout doesn't shift, so it's ideal if you haven't learned about building responsive layouts yet.",
+    "tags": [
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "folder": "004_nft-preview-card-component",
+    "title": "NFT preview card component",
+    "orginalLink": "https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U",
+    "description": "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
+    "tags": [
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "folder": "005_order-summary-component",
+    "title": "Order summary component",
+    "orginalLink": "https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj",
+    "description": "A perfect project for newbies who are starting to build confidence with layouts!",
+    "tags": [
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "folder": "006_stats-preview-card-component",
+    "title": "Stats preview card component",
+    "orginalLink": "https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62",
+    "description": "This is a great small challenge to help get you used to building to a design. There's no JS in this project, so you'll be able to focus on your HTML & CSS skills.",
+    "tags": [
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "folder": "007_3-column-preview-card-component",
+    "title": "3-column preview card component",
+    "orginalLink": "https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-",
+    "description": "This challenge is perfect if you're just getting started. The shift between the layouts will be a nice test if you're new to building responsive projects.",
+    "tags": [
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "folder": "008_profile-card-component",
+    "title": "Profile card component",
+    "orginalLink": "https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ",
+    "description": "This is a perfect challenge to test your layout skills. The card layout doesn't shift, so it's also great for those that haven't dived into responsive websites yet!",
+    "tags": [
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "folder": "009_faq-accordion-card",
+    "title": "FAQ accordion card",
+    "orginalLink": "https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam",
+    "description": "In this challenge, you'll be building out an FAQ accordion. This is an extremely common front-end pattern, so it's a great opportunity to get some practice in!",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JS"
+    ]
+  },
+  {
+    "folder": "010_social-proof-section",
+    "title": "Social proof section",
+    "orginalLink": "https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA",
+    "description": "This project will test your layout skills. If you're starting to get confident with Flexbox or Grid, this will provide a nice challenge!",
+    "tags": [
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "folder": "011_results-summary-component",
+    "title": "Results summary component",
+    "orginalLink": "https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV",
+    "description": "This challenge has something for everyone. It’s a HTML and CSS only project, but we’ve also provided a JSON file of the test results for anyone wanting to practice JS.",
+    "tags": [
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "folder": "012_article-preview-component",
+    "title": "Article preview component",
+    "orginalLink": "https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT",
+    "description": "Practice your layout skills with this article preview component. There's lots of fun to be had playing around with animations for the sharing icons as well.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JS"
+    ]
+  },
+  {
+    "folder": "013_four-card-feature-section",
+    "title": "Four card feature section",
+    "orginalLink": "https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK",
+    "description": "A nice layout-based challenge for beginners. This will test anyone who is new to multi-column and responsive layouts.",
+    "tags": [
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "folder": "014_base-apparel-coming-soon-page",
+    "title": "Base Apparel coming soon page",
+    "orginalLink": "https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0",
+    "description": "This layout looks simple enough, but there are some interesting details to it that will test your CSS skills. You'll also get to practice basic form validation.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JS"
+    ]
+  },
+  {
+    "folder": "015_intro-component-with-sign-up-form",
     "title": "Intro component with sign-up form",
     "orginalLink": "https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1",
     "description": "Practice building out a sign-up form complete with client-side validation using JavaScript.",
@@ -86,27 +156,17 @@ const projects =
     ]
   },
   {
-    "folder": "challenges/nft-preview-card-component/",
-    "title": "NFT preview card component",
-    "orginalLink": "https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U",
-    "description": "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
+    "folder": "016_single-price-grid-component",
+    "title": "Single price grid component",
+    "orginalLink": "https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc",
+    "description": "In this challenge, you will build out the pricing component to the designs provided. This is perfect for beginners and people who want to complete a smaller challenge.",
     "tags": [
       "HTML",
       "CSS"
     ]
   },
   {
-    "folder": "challenges/order-summary-component/",
-    "title": "Order summary component",
-    "orginalLink": "https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj",
-    "description": "A perfect project for newbies who are starting to build confidence with layouts!",
-    "tags": [
-      "HTML",
-      "CSS"
-    ]
-  },
-  {
-    "folder": "challenges/ping-single-column-coming-soon-page/",
+    "folder": "017_ping-single-column-coming-soon-page",
     "title": "Ping single column coming soon page",
     "orginalLink": "https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da",
     "description": "This challenge is great for beginners and offers a chance to practice basic client-side form validation.",
@@ -117,70 +177,10 @@ const projects =
     ]
   },
   {
-    "folder": "challenges/product-preview-card-component/",
-    "title": "Product preview card component",
-    "orginalLink": "https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa",
-    "description": "This HTML & CSS-only challenge will be perfect for anyone starting to build responsive projects.",
-    "tags": [
-      "HTML",
-      "CSS"
-    ]
-  },
-  {
-    "folder": "challenges/profile-card-component/",
-    "title": "Profile card component",
-    "orginalLink": "https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ",
-    "description": "This is a perfect challenge to test your layout skills. The card layout doesn't shift, so it's also great for those that haven't dived into responsive websites yet!",
-    "tags": [
-      "HTML",
-      "CSS"
-    ]
-  },
-  {
-    "folder": "challenges/qr-code-component/",
-    "title": "QR code component",
-    "orginalLink": "https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H",
-    "description": "A perfect first challenge if you're new to HTML and CSS. The card layout doesn't shift, so it's ideal if you haven't learned about building responsive layouts yet.",
-    "tags": [
-      "HTML",
-      "CSS"
-    ]
-  },
-  {
-    "folder": "challenges/results-summary-component/",
-    "title": "Results summary component",
-    "orginalLink": "https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV",
-    "description": "This challenge has something for everyone. It’s a HTML and CSS only project, but we’ve also provided a JSON file of the test results for anyone wanting to practice JS.",
-    "tags": [
-      "HTML",
-      "CSS"
-    ]
-  },
-  {
-    "folder": "challenges/single-price-grid-component/",
-    "title": "Single price grid component",
-    "orginalLink": "https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc",
-    "description": "In this challenge, you will build out the pricing component to the designs provided. This is perfect for beginners and people who want to complete a smaller challenge.",
-    "tags": [
-      "HTML",
-      "CSS"
-    ]
-  },
-  {
-    "folder": "challenges/social-proof-section/",
-    "title": "Social proof section",
-    "orginalLink": "https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA",
-    "description": "This project will test your layout skills. If you're starting to get confident with Flexbox or Grid, this will provide a nice challenge!",
-    "tags": [
-      "HTML",
-      "CSS"
-    ]
-  },
-  {
-    "folder": "challenges/stats-preview-card-component/",
-    "title": "Stats preview card component",
-    "orginalLink": "https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62",
-    "description": "This is a great small challenge to help get you used to building to a design. There's no JS in this project, so you'll be able to focus on your HTML & CSS skills.",
+    "folder": "018_huddle-landing-page-with-a-single-introductory-section",
+    "title": "Huddle landing page with a single introductory section",
+    "orginalLink": "https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0",
+    "description": "A perfect challenge for beginners, this project will get you working with a two column layout.",
     "tags": [
       "HTML",
       "CSS"
