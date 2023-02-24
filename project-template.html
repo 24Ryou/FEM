@@ -8,8 +8,16 @@
     {{#each tags}}
     <li class="{{this}}">{{this}}</li>
     {{/each}}
+    <span class="level-card {{ level }}">
+      <span class="level-number">
+        {{ number }}
+      </span>
+      <span class="level">
+        {{ level }}
+      </span>
+    </span>
   </ul>
-    <h1>{{title}}</h1>
+  <h1>{{title}}</h1>
   <p>{{description}}</p>
   </div>  
 
