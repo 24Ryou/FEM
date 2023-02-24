@@ -66,7 +66,7 @@ const prepare = async () => {
       description = $(textSelector).first().text()
       // folder = `challenges/${title.toLowerCase().replace(/\s/g, "-")}/`
       arr = {
-        "folder": dirs[ndx],
+        "folder": `challenges/${dirs[ndx]}/`,
         "title": title,
         "orginalLink": url,
         "description": description,
@@ -84,7 +84,8 @@ const prepare = async () => {
 const build = async () => {
   try {
     datas = await prepare()
-    datas.sort((a , b) => a.folder.split("_")[0] - b.folder.split("_")[0])
+    const getNum = (str) => str.match(/\/(\d.*)\//)[1].split("_")[0]
+    datas.sort((a , b) => getNum(a.folder) - getNum(b.folder))
     txt = "const projects = \n"
     fs.writeFileSync('projects.json' , txt)
     json  = JSON.stringify(datas ,null , 2)
