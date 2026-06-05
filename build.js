@@ -5,6 +5,7 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const fs = require("fs");
 const path = require("path");
+const readline = require("readline/promises");
 
 // ------------------------------
 // Selectors for Scraping
@@ -20,6 +21,70 @@ const regex = /\(https:\/\/www.frontendmentor.io\/challenges.*\)/gm;
 // Utility Helpers
 // ------------------------------
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+const levels = ["newbie", "junior", "intermediate", "advanced", "guru"];
+
+const titleFromFolder = (folder) => {
+  return folder
+    .replace(/^\d+_/, "")
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+};
+
+const readLocalFile = (folder, fileName) => {
+  const file = path.join("challenges", folder, fileName);
+  return fs.existsSync(file) ? fs.readFileSync(file, "utf8") : "";
+};
+
+const getLocalLevel = (folder) => {
+  const content = `${readLocalFile(folder, "AGENTS.md")}\n${readLocalFile(folder, "README.md")}`;
+  const match = content.match(/\b(newbie|junior|intermediate|advanced|guru)\b/i);
+  return match ? match[1].toLowerCase() : "";
+};
+
+const getLocalTags = (folder) => {
+  const content = readLocalFile(folder, "README-template.md");
+  const tags = [];
+
+  if (/html/i.test(content)) tags.push("HTML");
+  if (/css|scss|sass/i.test(content)) tags.push("CSS");
+  if (/javascript|\bjs\b/i.test(content)) tags.push("JS");
+  if (/api/i.test(content)) tags.push("API");
+
+  return tags;
+};
+
+const askForLevel = async (folder) => {
+  if (!process.stdin.isTTY) {
+    console.warn(`Level missing for ${folder}. Defaulting to newbie because the terminal is not interactive.`);
+    return "newbie";
+  }
+
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+
+  try {
+    const answer = await rl.question(
+      `Level for ${folder}? (${levels.join("/")}) [newbie]: `
+    );
+    const level = answer.trim().toLowerCase();
+
+    if (!level) return "newbie";
+    if (levels.includes(level)) return level;
+
+    console.warn(`Invalid level "${answer}". Defaulting to newbie.`);
+    return "newbie";
+  } finally {
+    rl.close();
+  }
+};
+
+const getLevel = async (folder, scrapedLevel) => {
+  return scrapedLevel || getLocalLevel(folder) || await askForLevel(folder);
+};
 
 // Load existing JSON (cache)
 let existingProjects = [];
@@ -80,22 +145,30 @@ const getLink = (folder) => {
 // ------------------------------
 // Step 3 — Safe Request With Headers
 // ------------------------------
-const getData = async (url) => {
-  try {
-    const response = await axios.get(url, {
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0",
-        Accept: "text/html,application/xhtml+xml",
-        "Accept-Language": "en-US,en;q=0.9",
-      },
-    });
+const getData = async (url, retries = 3) => {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      const response = await axios.get(url, {
+        timeout: 15000,
+        headers: {
+          "User-Agent":
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0",
+          Accept: "text/html,application/xhtml+xml",
+          "Accept-Language": "en-US,en;q=0.9",
+        },
+      });
 
-    return response.data;
-  } catch (error) {
-    console.log("Fetch failed:", url, "|", error.message);
-    return null;
+      return response.data;
+    } catch (error) {
+      console.log(`Fetch failed (${attempt}/${retries}):`, url, "|", error.message);
+
+      if (attempt < retries) {
+        await sleep(1500 * attempt);
+      }
+    }
   }
+
+  return null;
 };
 
 // ------------------------------
@@ -123,26 +196,36 @@ const prepare = async () => {
     console.log("Fetching:", url);
 
     const html = await getData(url);
-    if (!html) continue;
-
-    const $ = cheerio.load(html);
-
-    let tags = [];
-    $(tagSelector).each((_, el) => tags.push($(el).text()));
-
-    const title = $(headlineSelector).first().text().trim();
-    const description = $(textSelector).first().text().trim();
-    const levelNum = $(spanSelector).first().text().trim();
-    const level = $(spanSelector).last().text().trim();
-
     const number = folder.split("_")[0];
+    let title = "";
+    let description = "";
+    let tags = [];
+    let level = "";
+
+    if (html) {
+      const $ = cheerio.load(html);
+
+      $(tagSelector).each((_, el) => tags.push($(el).text()));
+
+      title = $(headlineSelector).first().text().trim();
+      description = $(textSelector).first().text().trim();
+      const levelNum = $(spanSelector).first().text().trim();
+      level = $(spanSelector).last().text().trim();
+    } else {
+      console.warn(`Scrape failed. Using local fallback data for ${folder}.`);
+    }
+
+    title = title || titleFromFolder(folder);
+    description = description || "Frontend Mentor challenge project.";
+    tags = tags.length ? tags : getLocalTags(folder);
+    level = await getLevel(folder, level);
 
     results.push({
       folder: `challenges/${folder}/`,
       title,
       orginalLink: url,
       description,
-      tags,
+      tags: tags.length ? tags : ["HTML", "CSS"],
       number,
       level,
     });
@@ -173,4 +256,7 @@ const build = async () => {
 };
 
 // ------------------------------
-build();
+build().catch((error) => {
+  console.error("Build failed:", error.message);
+  process.exit(1);
+});

@@ -232,5 +232,18 @@
     ],
     "number": "019",
     "level": "newbie"
+  },
+  {
+    "folder": "challenges/020_recipe-page/",
+    "title": "Recipe Page",
+    "orginalLink": "https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm",
+    "description": "Frontend Mentor challenge project.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JS"
+    ],
+    "number": "020",
+    "level": "newbie"
   }
 ]
