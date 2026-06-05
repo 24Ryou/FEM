@@ -1,4 +1,3 @@
-const projects = 
 [
   {
     "folder": "challenges/001_product-preview-card-component/",
@@ -221,5 +220,14 @@ const projects =
     ],
     "number": "1",
     "level": "newbie"
+  },
+  {
+    "folder": "challenges/019_blog-preview-card/",
+    "title": "",
+    "orginalLink": "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    "description": "",
+    "tags": [],
+    "number": "019",
+    "level": ""
   }
 ]

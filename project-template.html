@@ -1,24 +1,20 @@
-{{#with project}} {{evaluateLink folder projectLink}}
-
 <div class="card">
-  <a href="{{ projectLink }}">
-    <img src="{{folder}}design/desktop-preview.jpg" alt="Project Preview">
-  </a>
-  <ul>
-    {{#each tags}}
-    <li class="{{this}}">{{this}}</li>
-    {{/each}}
-    <span class="level-card {{ level }}">
-      <span class="level-number">
-        {{ number }}
-      </span>
-      <span class="level">
-        {{ level }}
-      </span>
-    </span>
-  </ul>
-  <h1>{{title}}</h1>
-  <p>{{description}}</p>
-  </div>  
+  <h2>{{project.title}}</h2>
 
-{{/with}}
+  <p>{{project.description}}</p>
+
+  <div class="tags">
+    {{#each project.tags}}
+      <span class="tag">{{this}}</span>
+    {{/each}}
+  </div>
+
+  <div class="links">
+    <a href="{{project.folder}}" target="_blank">Live</a>
+    <a href="{{project.orginalLink}}" target="_blank">Challenge</a>
+  </div>
+
+  <span class="level level-{{project.level}}">
+    {{project.level}}
+  </span>
+</div>
