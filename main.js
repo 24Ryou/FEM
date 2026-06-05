@@ -1,32 +1,50 @@
-const fileUrl = "./project-template.html";
 const projectsDOM = document.querySelector("main");
 
-// Optional helpers (you may not even need these)
-Handlebars.registerHelper("evaluateLink", function (folder, link, options) {
-  if (!link) options.data.root.project.projectLink = folder;
-});
+const renderTags = (tags = []) => {
+  return tags.map((tag) => `<span class="tag ${tag}">${tag}</span>`).join("");
+};
 
-Handlebars.registerHelper("githubLink", function (folder, options) {
-  options.data.root.project.codeLink = folder;
-});
+const renderProject = (project) => {
+  const previewImage = `${project.folder}design/desktop-preview.jpg`;
+  const fallbackImage = `${project.folder}preview.jpg`;
 
-// Fetch both template + JSON
-Promise.all([
-  fetch(fileUrl).then(r => r.text()),
-  fetch("./projects.json").then(r => r.json())
-])
-.then(([templateHTML, projects]) => {
+  return `
+    <article class="card">
+      <a href="${project.folder}">
+        <img src="${previewImage}" alt="${project.title} preview" onerror="this.onerror=null; this.src='${fallbackImage}'">
+      </a>
 
-  const template = Handlebars.compile(templateHTML);
+      <h2>${project.title}</h2>
 
-  let html = "";
+      <p>${project.description}</p>
 
-  projects.forEach(project => {
-    html += template({ project });
+      <div class="tags">
+        ${renderTags(project.tags)}
+      </div>
+
+      <div class="links">
+        <a href="${project.folder}">Live</a>
+        <a href="${project.orginalLink}" target="_blank" rel="noreferrer">Challenge</a>
+      </div>
+
+      <span class="level level-${project.level}">
+        ${project.level}
+      </span>
+    </article>
+  `;
+};
+
+fetch("./projects.json")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`Could not load projects.json: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then((projects) => {
+    projectsDOM.innerHTML = projects.map(renderProject).join("");
+  })
+  .catch((error) => {
+    console.error("Error loading projects:", error);
+    projectsDOM.innerHTML = `<p class="error">Could not load projects. Make sure you are running a local server from the project root.</p>`;
   });
-
-  projectsDOM.innerHTML = html;
-
-})
-.catch(err => console.error("Error loading projects:", err));
-

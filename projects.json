@@ -223,11 +223,14 @@
   },
   {
     "folder": "challenges/019_blog-preview-card/",
-    "title": "",
+    "title": "Blog preview card",
     "orginalLink": "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
-    "description": "",
-    "tags": [],
+    "description": "Practice building a clean card layout with hover and focus states for interactive elements.",
+    "tags": [
+      "HTML",
+      "CSS"
+    ],
     "number": "019",
-    "level": ""
+    "level": "newbie"
   }
 ]

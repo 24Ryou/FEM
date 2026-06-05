@@ -1,20 +1,20 @@
 <div class="card">
-  <h2>{{project.title}}</h2>
+  <h2>{{title}}</h2>
 
-  <p>{{project.description}}</p>
+  <p>{{description}}</p>
 
   <div class="tags">
-    {{#each project.tags}}
+    {{#each tags}}
       <span class="tag">{{this}}</span>
     {{/each}}
   </div>
 
   <div class="links">
-    <a href="{{project.folder}}" target="_blank">Live</a>
-    <a href="{{project.orginalLink}}" target="_blank">Challenge</a>
+    <a href="{{folder}}" target="_blank">Live</a>
+    <a href="{{orginalLink}}" target="_blank">Challenge</a>
   </div>
 
-  <span class="level level-{{project.level}}">
-    {{project.level}}
+  <span class="level level-{{level}}">
+    {{level}}
   </span>
 </div>
