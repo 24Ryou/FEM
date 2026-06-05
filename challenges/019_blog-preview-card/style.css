@@ -1,0 +1,49 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+body{
+  min-height:100vh;
+  display:grid;
+  place-items:center;
+  background:hsl(47,88%,63%);
+  font-family:'Figtree', sans-serif;
+}
+
+.card{
+  max-width:380px;
+  background:white;
+  padding:24px;
+  border-radius:16px;
+  border:1px solid black;
+  box-shadow:8px 8px 0 black;
+}
+
+.card-author{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-top:16px;
+}
+
+.card-author img{
+  width:32px;
+}
+
+.card-img{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:16px;
+}
+
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 500px;
+  }
+}
+
