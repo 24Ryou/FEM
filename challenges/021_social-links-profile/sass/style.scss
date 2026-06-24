@@ -1,0 +1,127 @@
+@use 'reset';
+@use 'variables';
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+    background-color: variables.$grey_900;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    min-height: 100vh;       /* The "gotcha" property */
+    margin: 0;
+    padding: 1.5rem;               /* Reset default browser margins */
+    font-family: variables.$font-family;
+    font-size: variables.$font-size-base;
+}
+
+.container-social {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: variables.$grey_800;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: variables.$shadow-main;
+  color: variables.$white;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 327px;
+  margin: 0 auto;
+//   border: 2px solid brown;
+}
+
+.avatar-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+//   border: 2px solid red;
+  height: 100%;
+  gap: 1rem;
+
+  .avatar-img {
+    border-radius: 100%;
+    height: 88px;
+    width: 88px;
+    background-color: variables.$green;
+    // border: 2px solid green;
+  }
+
+  .avatar-text {
+    display: flex;
+    flex-direction: column;
+    // border: 2px solid orange;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .avatar-location {
+    color: variables.$green;
+    font-weight: 700;
+  }
+
+  .avatar-about {
+    color: variables.$white;
+  }
+}
+
+.box-links {
+    // border: 2px solid pink;
+    width: 100%;
+    .links-list {
+        display: flex;
+        flex-direction: column; /* vertical list */
+        gap: 12px;              /* space between items */
+        align-items: center;    /* center items horizontally */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .link-item {
+        width: 100%;
+        text-align: center;
+        list-style: none;
+
+        a {
+            display: block;
+            width: 100%;
+            background-color: variables.$grey_700;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1rem;
+            color: variables.$white;
+            font-weight: 700;
+            transition: background-color 150ms ease, color 150ms ease;
+
+            &:hover,
+            &:focus-visible {
+                background-color: variables.$green;
+                color: variables.$grey_900;
+                outline: none;
+            }
+        }
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 768px) {
+  body {
+    padding: 2rem;
+  }
+
+  .container-social {
+    max-width: 384px;
+    padding: 2.5rem;
+  }
+}

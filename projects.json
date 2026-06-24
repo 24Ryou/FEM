@@ -245,5 +245,18 @@
     ],
     "number": "020",
     "level": "newbie"
+  },
+  {
+    "folder": "challenges/021_social-links-profile/",
+    "title": "Social Links Profile",
+    "orginalLink": "https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ",
+    "description": "Frontend Mentor challenge project.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JS"
+    ],
+    "number": "021",
+    "level": "newbie"
   }
 ]
